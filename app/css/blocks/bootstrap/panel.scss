@@ -1,0 +1,59 @@
+//
+// Panel
+// --------------------------------------------------
+
+.panel{
+	//@include box-shadow(none);
+
+
+	// Border-radius Fix
+	&-heading,
+	&-body,
+	&-footer{
+		&:first-child{
+			@include border-top-radius(($panel-border-radius - 1));
+		}
+		&:last-child{
+			@include border-bottom-radius(($panel-border-radius - 1));
+		}
+	}
+
+	//# Header
+	&-heading{
+
+	}
+
+		&-title{
+			line-height: $line-height-base;
+		}
+
+
+	//# Body
+	&-body{
+		background-color: $color-bg-main;
+
+		&:first-child{
+			@include border-top-radius(($panel-border-radius - 1));
+		}
+		&:last-child{
+			@include border-bottom-radius(($panel-border-radius - 1));
+		}
+
+	}
+
+	//# Footer
+	&-footer{
+
+	}
+
+
+	// Extra Blocks
+	// -------------------------------
+
+
+
+	// Color Variations
+	// -------------------------------
+
+
+}

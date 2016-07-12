@@ -1,0 +1,56 @@
+//
+// Badge
+// --------------------------------------------------
+
+.badge {
+	text-align: center;
+	padding: 3px 5px;
+	text-transform: uppercase;
+
+	//# Border Radius Variation
+	&-circle{
+		border-radius: $badge-border-radius-circle;
+	}
+
+	//# Size Variation
+	&-xs{
+		padding: 2px 4px;
+		font-size: $font-size-xs;
+	}
+
+	//# Color Variation
+	&-default {
+		@include label-variant($label-default-bg);
+	}
+
+	&-primary {
+		@include label-variant($label-primary-bg);
+	}
+
+	&-success {
+		@include label-variant($label-success-bg);
+	}
+
+	&-info {
+		@include label-variant($label-info-bg);
+	}
+
+	&-warning {
+		@include label-variant($label-warning-bg);
+	}
+
+	&-danger {
+		@include label-variant($label-danger-bg);
+	}
+
+
+	//# Component Variation
+	&-counter {
+		z-index: 1;
+		position: absolute;
+		bottom: 50%;
+		left: 45%;
+
+		border: 2px solid $navbar-default-bg;
+	}
+}

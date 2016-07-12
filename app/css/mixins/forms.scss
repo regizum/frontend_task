@@ -1,0 +1,68 @@
+//
+// Mixin Form
+// --------------------------------------------------
+
+
+@mixin form-control-validation($text-color, $border-color, $background-color) {
+	// Color the label and help text
+	.help-block,
+	.control-label,
+	.radio,
+	.checkbox,
+	.radio-inline,
+	.checkbox-inline,
+	&.radio label,
+	&.checkbox label,
+	&.radio-inline label,
+	&.checkbox-inline label  {
+		color: $text-color;
+	}
+
+	.form-control {
+		border-color: $border-color;
+		&:focus {
+			border-color: darken($border-color, 10%);
+		}
+	}
+	// Set validation states also for addons
+	.input-group-addon {
+		color: $text-color;
+		border-color: $border-color;
+		background-color: $background-color;
+	}
+	// Optional feedback icon
+	.form-control-feedback {
+		color: $text-color;
+	}
+}
+
+
+// Form control focus state
+@mixin form-control-focus($color: $input-border-focus) {
+	$color-rgba: rgba(red($color), green($color), blue($color), .6);
+	&:focus {
+		border-color: $color;
+		outline: 0;
+	}
+}
+
+// Form control sizing
+@mixin input-size($parent, $input-height, $padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
+	#{$parent} {
+		height: $input-height;
+		padding: $padding-vertical $padding-horizontal;
+		font-size: $font-size;
+		line-height: $line-height;
+		border-radius: $border-radius;
+	}
+
+	select#{$parent} {
+		height: $input-height;
+		line-height: $input-height;
+	}
+
+	textarea#{$parent},
+	select[multiple]#{$parent} {
+		height: auto;
+	}
+}

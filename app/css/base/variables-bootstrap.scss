@@ -1,0 +1,439 @@
+//
+// Bootstrap Variables
+// --------------------------------------------------
+
+
+// Colors
+// -------------------------------
+
+//# Bootstrap Gray
+$gray-base:                                     #000 !default;
+$gray-darker:                                   lighten($gray-base, 13.5%) !default;    // #222
+$gray-dark:                                     lighten($gray-base, 20%) !default;      // #333
+$gray:                                          lighten($gray-base, 33.5%) !default;    // #555
+$gray-light:                                    lighten($gray-base, 46.7%) !default;    // #777
+$gray-lighter:                                  lighten($gray-base, 93.5%) !default;    // #eee
+
+//# Custom Gray
+$gray-0:                                        #000;   // =$gray-base                  // #000
+$gray-2:                                        #222;   // =$gray-darker                // #222
+$gray-3:                                        #333;   // =$gray-dark                  // #333
+$gray-5:                                        #555;   // =$gray                       // #555
+$gray-6:                                        #666;   //                              // #666
+$gray-7:                                        #777;   // =$gray-light                 // #777
+$gray-9:                                        #999;   //                              // #999
+$gray-c:                                        #ccc;   //                              // #ccc
+$gray-d:                                        #ddd;   //                              // #ddd
+$gray-e:                                        #eee;   // =$gray-lighter               // #eee
+$gray-f5:                                       #f5f5f5;//                              // #f5f5f5
+$gray-fc:                                       #fcfcfc;//                              // #fcfcfc
+
+//# Bootstrap Multicolor
+$brand-primary:                                 #2b96f1;    //darken(#428bca, 6.5%) !default;
+$brand-success:                                 #5cb85c !default;
+$brand-info:                                    #4fc3f7;    //#5bc0de !default;
+$brand-warning:                                 #f0ad4e !default;
+$brand-danger:                                  #d43a36;    //#d9534f !default;
+
+//# Custom Global Colors
+$color-white:                                   #fff;
+
+//# Custom Text Colors
+$color-text-disabled:                           $gray-c;
+
+
+//# Custom BG Colors
+
+// BG Main
+$color-bg-extra:                                #f6f6f6;        // #f6f6f6;
+
+$color-bg-main:                                 #fcfcfc;
+$color-bg-main-normal:                          $color-bg-main;
+$color-bg-main-hover:                           #f5f8fc;
+$color-bg-main-active:                          $color-bg-main-hover;
+
+// BG Sub
+$color-bg-sub:                                  #f9fbfd;        //#fcfcfd;
+$color-bg-sub-normal:                           $color-bg-sub;
+$color-bg-sub-hover:                            #e1f0f9;        //#e0eef7;        //#f1f5f9;
+$color-bg-sub-active:                           $color-bg-sub-hover;
+
+// BG Multicolor
+$color-bg-gray:                                 #fafbfc;        //$gray-fc;
+$color-bg-blue:                                 #f6fbfe;
+
+$color-bg-nav-hover:                            $gray-f5;
+
+
+//# Custom Border Colors
+$color-border-main:                             #cccccc;           //#e7e8ec;        //#ebeef2;
+$color-border-focus:                            #4d90fe;           //#66afe9;
+
+
+//# Bootstrap Global Colors & Links
+$body-bg:                                       $color-bg-extra; //#fff !default;
+$text-color:                                    $gray-6;        //#607d8b; //$gray-dark !default;
+
+$link-color:                                    $brand-primary;
+$link-hover-color:                              darken($link-color, 15%);
+$link-hover-decoration:                         none;   //underline;
+
+//# Bootstrap State Colors
+$state-success-text:                            #3c763d !default;
+$state-success-bg:                              #f4fcf0;                            //#dff0d8 !default;
+$state-success-border:                          lighten($state-success-text, 34%);  //darken(adjust-hue($state-success-bg, -10), 5%) !default;
+
+$state-info-text:                               #31708f !default;
+$state-info-bg:                                 #f0fafc;                            //#d9edf7 !default;
+$state-info-border:                             lighten($state-info-text, 34%);     //darken(adjust-hue($state-info-bg, -10), 7%) !default;
+
+$state-warning-text:                            #8a6d3b !default;
+$state-warning-bg:                              #fcf7f0;                            //#fcf8e3 !default;
+$state-warning-border:                          lighten($state-warning-text, 34%);  //darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+
+$state-danger-text:                             #c62e2b;                            //#a94442 !default;
+$state-danger-bg:                               #FDFAFA;                            //#f2dede !default;
+$state-danger-border:                           lighten($state-danger-text, 34%);   //darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+
+
+
+// Typography
+// -------------------------------
+
+//# Font-Family
+
+// Custom Font-Family
+$font-family-arial:                             Arial, Helvetica, sans-serif;
+$font-family-light:                             'Open Sans', Helvetica, sans-serif;
+
+// Bootstrap Font-Family
+$font-family-sans-serif:                        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:                             Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:                         Menlo, Monaco, Consolas, "Courier New", monospace !default;
+
+$font-family-base:                              $font-family-arial; //$font-family-sans-serif !default;
+
+
+//# Font sizes
+$font-size-base:                                16px;                                       // ~14px
+$font-size-large:                               $font-size-base;                            //ceil(($font-size-base * 1.25)) !default;    // ~18px
+$font-size-small:                               ceil(($font-size-base * 0.85)) !default;    // ~12px
+$font-size-xs:                                  ceil(($font-size-base * 0.75));             // ~11px
+
+$font-size-h0:				    			    floor(($font-size-base * 3.05));            // ~42px
+$font-size-h1:				    			    floor(($font-size-base * 2.60));            // ~36px
+$font-size-h2:					    		    floor(($font-size-base * 2.15));            // ~30px
+$font-size-h3:						    	    ceil(($font-size-base * 1.7));              // ~24px
+$font-size-h4:							        ceil(($font-size-base * 1.24));             // ~18px
+$font-size-h5:		    					    ceil(($font-size-base * 1.14));     		// ~16px
+$font-size-h6:			    				    ceil(($font-size-base * 0.9));      	 	// ~13px
+
+
+//# Line-height (for use in components like buttons)
+$line-height-lg:                                1.5;        // Extra
+$line-height-base:                              1.42858;    //1.42857143; //1.428571429; // 20/14 // Исправил ошибку. Sass неправильно округляет, появляются ошибки в расчетах размеров кнопко
+$line-height-sm:        					    1.33333;
+$line-height-xs:        					    1.1;
+
+
+//# Computed line-height (for use with `margin`, `padding`, etc)
+$line-height-computed:                          floor(($font-size-base * $line-height-base)); // ~20px
+
+
+//# Bootstrap Global (default, this inherits from the `<body>`)
+$headings-font-family:                          $font-family-light;     //inherit !default;
+$headings-font-weight:                          600;                    //500 !default;
+$headings-line-height:                          $line-height-xs;        //1.1 !default;
+$headings-color:                                $gray;                  //inherit !default;
+
+
+
+// Components
+// -------------------------------
+//Define common padding and border radius sizes and more.
+//Values based on 14px text and 1.428 line-height (~20px to start).
+
+$padding-base-vertical:                         5px;    //6px !default;
+$padding-base-horizontal:                       10px;   //12px !default;
+
+$padding-large-vertical:                        10px !default;
+$padding-large-horizontal:                      16px !default;
+
+$padding-small-vertical:                        4px;    //4px;    //5px !default;
+$padding-small-horizontal:                      8px;    //10px !default;
+
+$padding-xs-vertical:                           1px !default;
+$padding-xs-horizontal:                         5px !default;
+
+$line-height-large:                             $line-height-sm;    //1.3333333 !default; // extra decimals for Win 8.1 Chrome
+$line-height-small:                             $line-height-lg;    //1.5 !default;
+
+$border-radius-large:                           5px;    //3px;    //6px !default;
+$border-radius-base:                            3px;    //4px !default;
+$border-radius-small:                           3px;    //2px;    //3px !default;
+// Custom
+$border-radius-xs:                              2px;    //2px;    //3px !default;
+
+// Global color for active items
+$component-active-color:                        $color-white !default;
+$component-active-bg:                           $brand-primary !default;
+
+// Width of the `border` for generating carets that indicator dropdowns
+$caret-width-base:                              4px !default;
+// Carets increase slightly in size for larger components
+$caret-width-large:                             5px !default;
+
+
+// Media Queries Breakpoints
+// -------------------------------
+
+// Extra small screen / phone
+$screen-xs:                                     480px !default;
+$screen-xs-min:                                 $screen-xs !default;
+$screen-phone:                                  $screen-xs-min !default;
+
+// Small screen / tablet
+$screen-sm:                                     768px !default;
+$screen-sm-min:                                 $screen-sm !default;
+$screen-tablet:                                 $screen-sm-min !default;
+
+// Medium screen / desktop
+$screen-md:                                     992px !default;
+$screen-md-min:                                 $screen-md !default;
+$screen-desktop:                                $screen-md-min !default;
+
+// Large screen / wide desktop
+$screen-lg:                                     1200px !default;
+$screen-lg-min:                                 $screen-lg !default;
+$screen-lg-desktop:                             $screen-lg-min !default;
+
+// Maximum
+$screen-xs-max:                                 ($screen-sm-min - 1) !default;
+$screen-sm-max:                                 ($screen-md-min - 1) !default;
+$screen-md-max:                                 ($screen-lg-min - 1) !default;
+
+
+// Grid System
+// -------------------------------
+
+$grid-columns:				        		    24;     //12 !default;     // 24;  //14;
+$grid-gutter-width:							    10px;   //30px !default;
+
+// Navbar collapse
+$grid-float-breakpoint:                         $screen-sm-min !default;
+$grid-float-breakpoint-max:                     ($grid-float-breakpoint - 1) !default;
+
+
+// Container sizes
+// -------------------------------
+
+//# Small screen / tablet
+$container-tablet:                              (720px + $grid-gutter-width) !default;
+// For `$screen-sm-min` and up
+$container-sm:                                  $container-tablet !default;
+
+// Medium screen / desktop
+$container-desktop:                             (940px + $grid-gutter-width) !default;
+// For `$screen-md-min` and up
+$container-md:                                  $container-desktop !default;
+
+// Large screen / wide desktop
+$container-large-desktop:                       (1140px + $grid-gutter-width) !default;
+// For `$screen-lg-min` and up
+$container-lg:                                  $container-large-desktop !default;
+
+// Badge
+// -------------------------------
+
+$badge-font-weight:                             normal; //bold !default;
+$badge-line-height:                             1 !default;
+
+// Bootstrap Border-radius
+$badge-border-radius:						    2px;    // 10px !default;
+// Custom Border-radius
+$badge-border-radius-circle:				    12px;
+
+// Bootstrap Text Color
+$badge-color:                                   $color-white !default;
+$badge-link-hover-color:                        $color-white !default;
+$badge-active-color:                            $link-color !default;
+
+// Bootstrap Bg
+$badge-bg:                                      $brand-primary; //$gray-light !default;
+$badge-active-bg:                               $brand-primary !default;
+
+
+// Navbar
+// -------------------------------
+
+
+// Navs
+// -------------------------------
+
+
+// Tabs
+// -------------------------------
+
+
+// Panels
+// -------------------------------
+
+//# BG
+$panel-bg:                                      $color-bg-sub;         //$color-bg-extra;
+$panel-body-bg:                                 $color-bg-main;
+$panel-footer-bg:                               $color-bg-main;        //#f5f5f5 !default;
+
+//# Padding
+$panel-heading-v:                               ($line-height-computed / 2);
+$panel-heading-h:                               ($line-height-computed / 4 * 3);
+
+$panel-heading-padding:                         $panel-heading-v $panel-heading-h;  //10px 15px !default;
+$panel-body-padding:                            $panel-heading-h;                              //15px !default;
+$panel-footer-padding:                          $panel-heading-padding !default;
+
+//# Border
+$panel-border-radius:                           $border-radius-base !default;
+$panel-inner-border:                            $color-border-main;     //#ddd !default;
+
+//# Panel Color Variations
+$panel-default-text:                            $gray-dark !default;
+$panel-default-border:                          $color-border-main;     //#ddd !default;
+$panel-default-heading-bg: $color-bg-main;        //#f5f5f5 !default;
+
+$panel-primary-text:                            $color-white !default;
+$panel-primary-border:                          $brand-primary !default;
+$panel-primary-heading-bg:                      $brand-primary !default;
+
+$panel-success-text:                            $state-success-text !default;
+$panel-success-border:                          $state-success-border !default;
+$panel-success-heading-bg:                      $state-success-bg !default;
+
+$panel-info-text:                               $color-white;                       //$state-info-text !default;
+$panel-info-border:                             $brand-info;                        //$state-info-border !default;
+$panel-info-heading-bg:                         $brand-info;                        //$state-info-bg !default;
+
+$panel-warning-text:                            $state-warning-text !default;
+$panel-warning-border:                          $state-warning-border !default;
+$panel-warning-heading-bg:                      $state-warning-bg !default;
+
+$panel-danger-text:                             $state-danger-text !default;
+$panel-danger-border:                           $state-danger-border !default;
+$panel-danger-heading-bg:                       $state-danger-bg !default;
+
+
+// Modal
+// -------------------------------
+
+
+// Buttons
+// -------------------------------
+
+$btn-font-weight:                               400;   //normal !default;
+
+//# Color Variations
+// Default
+$btn-default-color:                             $color-white !default;
+$btn-default-bg:                                #2b96f1 !default;
+$btn-default-border:                            $gray-c !default;
+
+// Primary
+$btn-primary-color:                             #fff !default;
+$btn-primary-bg:                                $brand-primary !default;
+$btn-primary-border:                            $btn-primary-bg;             //darken($btn-primary-bg, 5%) !default;
+
+// Success
+$btn-success-color:                             #fff !default;
+$btn-success-bg:                                $brand-success !default;
+$btn-success-border:                            $btn-success-bg;             //darken($btn-success-bg, 5%) !default;
+
+// Info
+$btn-info-color:                                #fff !default;
+$btn-info-bg:                                   $brand-info !default;
+$btn-info-border:                               $btn-info-bg;                //darken($btn-info-bg, 5%) !default;
+
+// Warning
+$btn-warning-color:                             #fff !default;
+$btn-warning-bg:                                $brand-warning !default;
+$btn-warning-border:                            $btn-warning-bg;             //darken($btn-warning-bg, 5%) !default;
+
+// Danger
+$btn-danger-color:                              #fff !default;
+$btn-danger-bg:                                 $brand-danger !default;
+$btn-danger-border:                             $btn-danger-bg;              //darken($btn-danger-bg, 5%) !default;
+
+// Disable
+$btn-link-disabled-color:                       $gray-light !default;
+
+//# Border-radius
+$btn-border-radius-base:                        $border-radius-base !default;
+$btn-border-radius-large:                       $border-radius-large !default;
+$btn-border-radius-small:                       $border-radius-small !default;
+// Custom
+$btn-border-radius-xs:                          $border-radius-xs;
+
+
+// Forms
+// -------------------------------
+
+//# Input
+// Bg
+$input-bg:                                      $color-white !default;
+$input-bg-disabled:                             $gray-f5;   //$gray-lighter !default;
+
+// Color
+$input-color:                                   $gray !default;
+// Custom color
+$input-color-disabled:                          $gray-9;
+
+// Border
+$input-border:                                  $gray-c !default;
+$input-border-focus:                            $color-border-focus !default;
+
+// Border-radius
+$input-border-radius:                           0;  //$border-radius-base !default;
+$input-border-radius-large:                     0;  //$border-radius-large !default;
+$input-border-radius-small:                     0;  //$border-radius-small !default;
+
+// Placeholder text color
+$input-color-placeholder:                       $gray-9 !default;
+
+// Height
+$input-height-base:                             ($line-height-computed + ($padding-base-vertical * 2) + 2) !default;
+$input-height-large:                            (floor($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2); //(ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2) !default;
+$input-height-small:                            (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2) !default;
+
+//# Form-group margin
+$form-group-margin-bottom:                      15px !default;
+
+// Legend
+$legend-color:                                  $gray-dark !default;
+$legend-border-color:                           $color-border-main; //#e5e5e5 !default;
+
+// Addons
+$input-group-addon-bg:                          $color-white;       //$gray-lighter !default;
+$input-group-addon-border-color:                $input-border !default;
+
+//** Disabled cursor
+$cursor-disabled:                               not-allowed !default;
+
+
+// Dropdown
+// -------------------------------
+
+
+// Z-index
+// -------------------------------
+
+
+// Icon, Custom
+// -------------------------------
+
+$icon-size-md:                                  16px;
+
+
+//Arrow, Custom
+// -------------------------------
+
+
+// Page (Main layout)
+// -------------------------------

@@ -1,0 +1,127 @@
+//
+// Styles (All)
+// --------------------------------------------
+
+// Variables
+@import 'base/variables-project';
+
+// Mixins
+@import 'mixins/forms';
+@import 'mixins/tab-focus';
+@import 'mixins/buttons';
+@import 'mixins/center-block';
+
+// Fonts 
+@import 'blocks/bootstrap/font_awesome/font-awesome';
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic-ext);
+
+// Base
+@import 'base/base';
+ 
+// Bootstrap 
+// ----------------------
+
+//# Core variables and mixins
+// Utilities
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/hide-text";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/opacity";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/image";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/labels";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/reset-filter";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/resize";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/responsive-visibility";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/size";
+//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/tab-focus";                //Переназначил
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/reset-text";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/text-emphasis";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/text-overflow";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/vendor-prefixes";
+
+// Components
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/alerts";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/buttons";               // Переназначил
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/panels";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/pagination";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/list-group";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/nav-divider";
+//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/forms";                  // Переназначил
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/progress-bar";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/table-row";
+
+// Skins
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/background-variant";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/border-radius";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/gradients";
+
+// Layout
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/clearfix";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/center-block";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/nav-vertical-align";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/grid-framework";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/grid";
+
+//# Reset and dependencies
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/print";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";
+
+//# Core CSS
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/type";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/code";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/tables";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/forms";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
+
+//# Components
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/dropdowns";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/button-groups";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/input-groups";
+//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navs";                      // Переназначила
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/breadcrumbs";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/pagination";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/pager";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/labels";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/badges";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/jumbotron";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/thumbnails";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/alerts";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/progress-bars";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/media";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/list-group";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/panels";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/wells";
+// @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/close";                      // Переназначил
+
+//# Components w/ JavaScript
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/modals";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/tooltip";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/popovers";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/carousel";
+
+//# Utility classes
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+
+
+//
+// Base Styles
+// --------------------------------------------
+
+// Helpers
+@import 'base/helpers';
+ 
+// Blocks
+@import 'blocks/bootstrap/forms/forms';
+@import 'blocks/bootstrap/buttons';
+@import 'blocks/bootstrap/panel';
+@import 'blocks/bootstrap/badge';
+@import 'blocks/bootstrap/close';
+@import 'blocks/bootstrap/navs';
+@import 'blocks/bootstrap/cover-container';
+
+@import 'blocks/project/main.scss'; 

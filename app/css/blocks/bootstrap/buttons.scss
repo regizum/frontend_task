@@ -1,0 +1,29 @@
+//
+// Buttons
+// --------------------------------------------------
+
+.btn{
+     overflow: hidden;
+     text-overflow: ellipsis;
+
+     &:active,
+     &.active {
+          @include box-shadow(none);
+     }
+}
+
+
+// Button Sizes
+// -------------------------------
+
+.btn-xs {
+     @include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $btn-border-radius-xs); // Update $btn-border-radius
+}
+
+// Block button
+// -------------------------------
+
+// Vertically space out multiple block buttons
+.btn-block + .btn-block {
+     margin-top: $line-height-computed / 2;
+}

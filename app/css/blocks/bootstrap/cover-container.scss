@@ -1,0 +1,17 @@
+//
+// Cover-container
+// --------------------------------------------------
+
+.cover-container {
+	vertical-align: middle;
+	display: table-cell;
+		
+	.cover {
+		@include center-block();
+		background-color: $color-bg-main;
+		border: 2px $color-border-main solid;
+		border-radius: $border-radius-large;
+		padding: 0px;
+		float: none;
+	}
+}

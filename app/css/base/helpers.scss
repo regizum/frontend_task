@@ -1,0 +1,125 @@
+//
+// Helpers 
+// --------------------------------------------------
+
+
+// Media Queries Breakpoints
+// -------------------------------
+// Использование: @include screen-xs {...}
+
+//# Extra small screen (phone)
+@mixin screen-xs {
+	@media (max-width: $screen-xs-max){
+		@content;
+	}
+}
+
+//# Small screen (tablet)
+@mixin screen-sm {
+	@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+		@content;
+	}
+}
+
+// Small screen + > (phone + tablet)
+@mixin screen-sm-less {
+	@media (max-width: $screen-sm-max){
+		@content;
+	}
+}
+
+// Small screen + < (tablet + desktop + wide)
+@mixin screen-sm-more {
+	@media (min-width: $screen-sm-min){
+		@content;
+	}
+}
+
+//# Medium screen (desktop)
+@mixin screen-md {
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+		@content;
+	}
+}
+
+//# Medium screen + < (desktop + wide)
+@mixin screen-md-more {
+	@media (min-width: $screen-md-min){
+		@content;
+	}
+}
+
+//# Large screen (wide desktop)
+@mixin screen-lg {
+	@media (min-width: $screen-lg-min){
+		@content;
+	}
+}
+
+
+// Generic Margin Padding Options
+// -------------------------------
+
+$spaceamounts: (0, 5, 10, 15, 20, 25, 30);
+
+@mixin generate-margin-top() {
+	@each $space in $spaceamounts {
+		.m-t-#{$space} {
+			margin-top: #{$space}px !important;
+		}
+	}
+}
+
+@mixin generate-margin-bottom() {
+	@each $space in $spaceamounts {
+		.m-b-#{$space} {
+			margin-bottom: #{$space}px !important;
+		}
+	}
+}
+
+@mixin generate-padding-top() {
+	@each $space in $spaceamounts {
+		.p-t-#{$space} {
+			padding-top: #{$space}px !important;
+		}
+	}
+}
+
+@mixin generate-padding-bottom() {
+	@each $space in $spaceamounts {
+		.p-b-#{$space} {
+			padding-bottom: #{$space}px !important;
+		}
+	}
+}
+
+@include generate-margin-top();
+@include generate-margin-bottom();
+@include generate-padding-top();
+@include generate-padding-bottom();
+
+// Full Size
+// -------------------------------
+
+.full-height {
+	height: 100%;
+}
+.full-width {
+	width: 100%;
+}
+
+
+// Text
+// -------------------------------
+
+.text-overflow {
+	@include text-overflow();
+}
+
+// Border
+// -------------------------------
+
+.bdrs-0{
+	border-radius: 0;
+}

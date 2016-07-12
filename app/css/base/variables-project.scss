@@ -1,0 +1,30 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+// Bootstrap variables
+// -------------------------------
+
+// Custom Bootstrap variables
+@import 'variables-bootstrap.scss';
+
+// Default Bootstrap variables
+@import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables.scss';
+
+
+// Project variables
+// -------------------------------
+//Navigation
+$nav-pills-active-link-hover-color:			#2f2f2f;
+$nav-pills-active-link-hover-bg:			transparent;
+$nav-link-hover-bg:							transparent;
+$nav-pills-border-radius:					none;
+$nav-link-color:							#2f2f2f;
+$nav-tabs-active-link-hover-border-color: 	#2392f0;
+$nav-link-padding:							5px 10px;
+
+//Form controls
+$text-color:								#555;
+$border-color:								#ccc;
+$background-color:							#fff;

@@ -1,0 +1,57 @@
+//
+// Close Buttons
+// --------------------------------------------------
+// Использование: <a href="#" class="close close-black close-middle" data-dismiss="modal" aria-label="Close"></a>
+.close {
+	@include user-select(none);
+	cursor: pointer;
+
+	z-index: 1;
+	position: absolute;
+
+	top: $line-height-computed;
+	right: $line-height-computed;
+
+	@include square($icon-size-md);
+
+
+	//# Color Variations
+	&-black {
+		@include opacity(.5);
+		background: url('../img/x-normal.svg') no-repeat center;
+
+		&:hover,
+		&:focus {
+			@include opacity(1);
+		}
+	}
+	&-white {
+		@include opacity(.8);
+		background: url('../img/x-normal-white.svg') no-repeat center;
+
+		&:hover,
+		&:focus {
+			@include opacity(1);
+		}
+	}
+
+	// Width Variations
+	&-black.close-bold {
+		background: url('../img/x-bold.svg') no-repeat center;
+	}
+	&-black.close-light {
+		background: url('../img/x-light.svg') no-repeat center;
+	}
+	&-white.close-bold {
+		background: url('../img/x-bold-white.svg') no-repeat center;
+	}
+	&-white.close-light {
+		background: url('../img/x-light-white.svg') no-repeat center;
+	}
+
+	// Position
+	&-middle{
+		top: 50%;
+		margin-top: -($icon-size-md / 2) !important;
+	}
+}
