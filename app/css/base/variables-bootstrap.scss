@@ -115,7 +115,7 @@ $font-family-base:                              $font-family-arial; //$font-fami
 
 
 //# Font sizes
-$font-size-base:                                16px;                                       // ~14px
+$font-size-base:                                15px;                                       // ~14px
 $font-size-large:                               $font-size-base;                            //ceil(($font-size-base * 1.25)) !default;    // ~18px
 $font-size-small:                               ceil(($font-size-base * 0.85)) !default;    // ~12px
 $font-size-xs:                                  ceil(($font-size-base * 0.75));             // ~11px
