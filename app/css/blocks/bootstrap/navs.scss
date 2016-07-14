@@ -8,24 +8,26 @@
 
 .nav {
   margin-bottom: 0;
-  //padding: 0; // Override default ul/ol
-  text-align: center;
+  padding-left: 0; // Override default ul/ol
   list-style: none;
+  float: none;
+  text-align: center;
   @include clearfix;
 
-  > span {
+  > li {
     position: relative;
-    display: inline-block;
+    display: block;
+	float: none;
+	display: inline-block;
 
     > a {
       position: relative;
       display: block;
       padding: $nav-link-padding;
-	  color: $nav-link-color;
       &:hover,
       &:focus {
         text-decoration: none;
-        background-color: $nav-link-hover-bg;
+        //background-color: $nav-link-hover-bg;
       }
     }
 
@@ -76,8 +78,9 @@
 
 // Give the tabs something to sit on
 .nav-tabs {
-  border-bottom: 1px solid $nav-tabs-border-color;
+
   > li {
+    //float: left;
     // Make the list-items overlay the bottom border
     margin-bottom: -1px;
 
@@ -85,7 +88,8 @@
     > a {
       margin-right: 2px;
       line-height: $line-height-base;
-      border: 1px solid transparent;
+      color: $nav-tabs-link-color;
+      //border: 1px solid transparent;
       border-radius: $border-radius-base $border-radius-base 0 0;
       &:hover {
         border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;
@@ -97,9 +101,10 @@
       &,
       &:hover,
       &:focus {
+		font-weight: bold;
         color: $nav-tabs-active-link-hover-color;
-        background-color: $nav-tabs-active-link-hover-bg;
-        border: 1px solid $nav-tabs-active-link-hover-border-color;
+        //background-color: $nav-tabs-active-link-hover-bg;
+        border-bottom: 3px solid $nav-tabs-active-link-hover-border-color;
         cursor: default;
       }
     }
@@ -115,13 +120,15 @@
 // Pills
 // -------------------------
 .nav-pills {
-  > span {
+  > li {
+    float: left;
+
     // Links rendered as pills
     > a {
       border-radius: $nav-pills-border-radius;
     }
-    + span {
-      margin-left: 1px;
+    + li {
+      margin-left: 2px;
     }
 
     // Active state
@@ -131,8 +138,6 @@
       &:focus {
         color: $nav-pills-active-link-hover-color;
         background-color: $nav-pills-active-link-hover-bg;
-		font-weight: bold; 
-        border-bottom: 3px solid $nav-tabs-active-link-hover-border-color;
       }
     }
   }

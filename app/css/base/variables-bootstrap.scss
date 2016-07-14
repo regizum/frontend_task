@@ -47,7 +47,7 @@ $color-text-disabled:                           $gray-c;
 // BG Main
 $color-bg-extra:                                #f6f6f6;        // #f6f6f6;
 
-$color-bg-main:                                 #fcfcfc;
+$color-bg-main:                                 $color-white;
 $color-bg-main-normal:                          $color-bg-main;
 $color-bg-main-hover:                           #f5f8fc;
 $color-bg-main-active:                          $color-bg-main-hover;
@@ -66,7 +66,7 @@ $color-bg-nav-hover:                            $gray-f5;
 
 
 //# Custom Border Colors
-$color-border-main:                             #cccccc;           //#e7e8ec;        //#ebeef2;
+$color-border-main:                             $gray-d;           //#e7e8ec;        //#ebeef2;
 $color-border-focus:                            #4d90fe;           //#66afe9;
 
 
@@ -74,7 +74,7 @@ $color-border-focus:                            #4d90fe;           //#66afe9;
 $body-bg:                                       $color-bg-extra; //#fff !default;
 $text-color:                                    $gray-6;        //#607d8b; //$gray-dark !default;
 
-$link-color:                                    $brand-primary;
+$link-color:                                    $gray-darker;
 $link-hover-color:                              darken($link-color, 15%);
 $link-hover-decoration:                         none;   //underline;
 
@@ -115,7 +115,7 @@ $font-family-base:                              $font-family-arial; //$font-fami
 
 
 //# Font sizes
-$font-size-base:                                15px;                                       // ~14px
+$font-size-base:                                14px;                                       // ~14px
 $font-size-large:                               $font-size-base;                            //ceil(($font-size-base * 1.25)) !default;    // ~18px
 $font-size-small:                               ceil(($font-size-base * 0.85)) !default;    // ~12px
 $font-size-xs:                                  ceil(($font-size-base * 0.75));             // ~11px
@@ -142,7 +142,7 @@ $line-height-computed:                          floor(($font-size-base * $line-h
 
 //# Bootstrap Global (default, this inherits from the `<body>`)
 $headings-font-family:                          $font-family-light;     //inherit !default;
-$headings-font-weight:                          600;                    //500 !default;
+$headings-font-weight:                          400;                    //500 !default;
 $headings-line-height:                          $line-height-xs;        //1.1 !default;
 $headings-color:                                $gray;                  //inherit !default;
 
@@ -168,7 +168,7 @@ $padding-xs-horizontal:                         5px !default;
 $line-height-large:                             $line-height-sm;    //1.3333333 !default; // extra decimals for Win 8.1 Chrome
 $line-height-small:                             $line-height-lg;    //1.5 !default;
 
-$border-radius-large:                           5px;    //3px;    //6px !default;
+$border-radius-large:                           3px;    //2px;    //6px !default;
 $border-radius-base:                            3px;    //4px !default;
 $border-radius-small:                           3px;    //2px;    //3px !default;
 // Custom
@@ -228,7 +228,7 @@ $grid-float-breakpoint-max:                     ($grid-float-breakpoint - 1) !de
 // -------------------------------
 
 //# Small screen / tablet
-$container-tablet:                              (720px + $grid-gutter-width) !default;
+$container-tablet:                              auto;    //(720px + $grid-gutter-width) !default;
 // For `$screen-sm-min` and up
 $container-sm:                                  $container-tablet !default;
 
@@ -269,7 +269,9 @@ $badge-active-bg:                               $brand-primary !default;
 
 // Navs
 // -------------------------------
-
+$nav-link-padding:								5px 10px;
+$nav-tabs-active-link-hover-border-color:		$brand-primary;
+$nav-tabs-link-color:							$gray-0;
 
 // Tabs
 // -------------------------------
@@ -332,8 +334,8 @@ $btn-font-weight:                               400;   //normal !default;
 
 //# Color Variations
 // Default
-$btn-default-color:                             $color-white !default;
-$btn-default-bg:                                #2b96f1 !default;
+$btn-default-color:                             $gray-dark !default;
+$btn-default-bg:                                $color-white !default;
 $btn-default-border:                            $gray-c !default;
 
 // Primary

@@ -3,7 +3,7 @@
 // --------------------------------------------------
 
 .panel{
-	//@include box-shadow(none);
+	box-shadow: 0 0 30px $gray-c;
 
 
 	// Border-radius Fix
@@ -20,7 +20,7 @@
 
 	//# Header
 	&-heading{
-
+		padding-bottom: 0px;
 	}
 
 		&-title{

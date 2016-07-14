@@ -5,12 +5,10 @@
 html,
 body{
 	overflow-x: hidden;
-	position: relative;
-	font-family: $font-family-light;
-}
-
-html, body {
 	height: 100%;
+}
+body{
+	position: relative;
     min-height: 530px;
 	min-width: 320px;
-} 
+}

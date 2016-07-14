@@ -2,9 +2,10 @@
 // Forms
 // --------------------------------------------------
 
+// Form-group
 .form-group{
-	margin-bottom: 0;
-	
+
+}
 	// Label
 	.control-label{
 		font-size: $font-size-h6;
@@ -18,10 +19,11 @@
 		}
 	}
 
+	// Form-control
 	.form-control {
 		font-weight: 400;
-		height: 46px;
 		-webkit-appearance:none;  // Remove default shadow Webkit Mobile
 		@include box-shadow(none);
+
 	}
-}
+

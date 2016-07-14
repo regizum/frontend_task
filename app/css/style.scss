@@ -9,15 +9,15 @@
 @import 'mixins/forms';
 @import 'mixins/tab-focus';
 @import 'mixins/buttons';
-@import 'mixins/center-block';
 
-// Fonts 
+// Fonts
 @import 'blocks/bootstrap/font_awesome/font-awesome';
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic-ext);
 
 // Base
 @import 'base/base';
- 
+
+
 // Bootstrap 
 // ----------------------
 
@@ -40,7 +40,7 @@
 // Components
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/alerts";
 // @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/buttons";               // Переназначил
-@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/panels";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/panels";					
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/pagination";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/list-group";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/nav-divider";
@@ -79,7 +79,7 @@
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/dropdowns";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/button-groups";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/input-groups";
-//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navs";                      // Переназначила
+//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navs";							//Переназначила
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/breadcrumbs";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/pagination";
@@ -114,14 +114,15 @@
 
 // Helpers
 @import 'base/helpers';
- 
+
+
 // Blocks
+// ----------------------
+
 @import 'blocks/bootstrap/forms/forms';
 @import 'blocks/bootstrap/buttons';
 @import 'blocks/bootstrap/panel';
 @import 'blocks/bootstrap/badge';
 @import 'blocks/bootstrap/close';
 @import 'blocks/bootstrap/navs';
-@import 'blocks/bootstrap/cover-container';
-
-@import 'blocks/project/main.scss'; 
+@import 'blocks/bootstrap/mastfoot';
