@@ -16,66 +16,72 @@
 </head>
 <body>
 	<!-- content -->
-	<div class="container m-t-20">
-		<div class="row my_class">
-			<div class="col-xs-20 col-xs-offset-2 col-sm-12 col-sm-offset-7 col-md-10 col-md-offset-7 col-lg-8 col-lg-offset-8 m-t-30">
-				<article class="panel panel-default">
-					<div class="panel-heading">
-						<div class="row">
-							<div class='col-xs-8 col-xs-offset-8 m-t-30 m-b-15'>
-								<img class="img-responsive" src="img/logo.png" />
+	<div class="page page-vertical-middle">
+		<div class="page-wrapper">
+	 		<div class="container">
+				<div class="row my_class">
+					<div class="col-xs-22 col-xs-offset-1 col-sm-12 col-sm-offset-7 col-md-10 col-md-offset-7 col-lg-8 col-lg-offset-8">
+						<article class="panel panel-default">
+							<div class="panel-heading">
+								<div class="row">
+									<div class='col-xs-8 col-xs-offset-8 m-t-30 m-b-15'>
+										<img class="img-responsive" src="img/logo.png" />
+									</div>
+								</div>					
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs">
+									<li class="active"><a href="#sign-in" data-toggle="tab">Вход в панель</a></li>
+									<li><a href="#sign-up" data-toggle="tab">Регистрация</a></li>
+								</ul>
 							</div>
-						</div>					
-						<!-- Nav tabs -->
-						<ul class="nav nav-tabs">
-							<li class="active"><a href="#sign-in" data-toggle="tab">Вход в панель</a></li>
-							<li><a href="#sign-up" data-toggle="tab">Регистрация</a></li>
-						</ul>
+							<!-- /.panel-heading -->
+							<div class="panel-body">	
+								<!-- Tab panes -->
+								<div class="tab-content">
+									<div class="tab-pane active" id="sign-in">
+										<form role="form">
+											<div class="form-group m-b-0">
+												<label class="control-label sr-only" for="exampleInputEmail3">Логин или E-mail</label>
+												<input type="email" class="form-control input-lg" id="exampleInputEmail3" placeholder="Логин или E-mail">
+											</div>
+											<div class="form-group">
+												<label class="control-label sr-only" for="exampleInputPassword3">Пароль</label>
+												<input type="password" class="form-control input-lg" id="exampleInputPassword3" placeholder="Пароль">
+											</div>
+											<button type="submit" class="btn btn-default btn-block btn-primary btn-lg">Войти</button>								
+										</form>
+										<p class="m-t-15 m-b-0 text-align-center"><a href="forget-password.html">Забыли пароль?</a></p>
+									</div>
+									<div class="tab-pane" id="sign-up">						
+										<form role="form">
+											<div class="form-group m-b-0">
+												<label class="control-label sr-only" for="exampleInputEmail3">E-mail</label>
+												<input type="email" class="form-control input-lg" id="exampleInputEmail3" placeholder="E-mail">
+											</div>
+											<div class="form-group m-b-0">
+												<label class="control-label sr-only" for="exampleInputPassword3">Пароль</label>
+												<input type="password" class="form-control input-lg" id="exampleInputPassword3" placeholder="Пароль">
+											</div>		
+											<div class="form-group">
+												<label class="control-label sr-only" for="exampleInputPassword3">Повторите пароль</label>
+												<input type="password" class="form-control input-lg" id="exampleInputPassword3" placeholder="Повторите пароль">
+											</div>		
+											<button type="submit" class="btn btn-default btn-block btn-primary btn-lg">Зарегистрироваться</button>		
+											<p class="m-t-15 m-b-0 text-align-center">Регистрируясь, вы соглашаетесь с нашими <a href="#">условиями использования</a> и <a href="#">политикой конфиденциальности</a></p>
+										</form>
+									</div>
+								</div>					
+							</div>
+							<!-- /.panel -->
+						</article>
 					</div>
-					<!-- /.panel-heading -->
-					<div class="panel-body">	
-						<!-- Tab panes -->
-						<div class="tab-content">
-							<div class="tab-pane active" id="sign-in">
-								<form role="form">
-									<div class="form-group m-b-0">
-										<label class="control-label sr-only" for="exampleInputEmail3">Логин или E-mail</label>
-										<input type="email" class="form-control input-lg" id="exampleInputEmail3" placeholder="Логин или E-mail">
-									</div>
-									<div class="form-group">
-										<label class="control-label sr-only" for="exampleInputPassword3">Пароль</label>
-										<input type="password" class="form-control input-lg" id="exampleInputPassword3" placeholder="Пароль">
-									</div>
-									<button type="submit" class="btn btn-default btn-block btn-primary btn-lg">Войти</button>								
-								</form>
-								<p class="m-t-15 m-b-0 text-align-center"><a href="forget-password.html">Забыли пароль?</a></p>
-							</div>
-							<div class="tab-pane" id="sign-up">						
-								<form role="form">
-									<div class="form-group m-b-0">
-										<label class="control-label sr-only" for="exampleInputEmail3">E-mail</label>
-										<input type="email" class="form-control input-lg" id="exampleInputEmail3" placeholder="E-mail">
-									</div>
-									<div class="form-group m-b-0">
-										<label class="control-label sr-only" for="exampleInputPassword3">Пароль</label>
-										<input type="password" class="form-control input-lg" id="exampleInputPassword3" placeholder="Пароль">
-									</div>		
-									<div class="form-group">
-										<label class="control-label sr-only" for="exampleInputPassword3">Повторите пароль</label>
-										<input type="password" class="form-control input-lg" id="exampleInputPassword3" placeholder="Повторите пароль">
-									</div>		
-									<button type="submit" class="btn btn-default btn-block btn-primary btn-lg">Зарегистрироваться</button>		
-									<p class="m-t-15 m-b-0 text-align-center">Регистрируясь, вы соглашаетесь с нашими <a href="#">условиями использования</a> и <a href="#">политикой конфиденциальности</a></p>
-								</form>
-							</div>
-						</div>					
-					</div>
-					<!-- /.panel -->
-				</article>
+					<!-- /.col-xs-20 col-xs-offset-2 col-sm-12 col-sm-offset-7 col-md-10 col-md-offset-7 col-lg-8 col-lg-offset-8 -->
+				</div>
+				<!-- /.container -->
 			</div>
-			<!-- /.col-xs-20 col-xs-offset-2 col-sm-12 col-sm-offset-7 col-md-10 col-md-offset-7 col-lg-8 col-lg-offset-8 -->
+			<!-- /.page-wrapper -->
 		</div>
-		<!-- /.containger -->
+		<!-- /.page page-vertical-middle -->
 	</div>
 	<!-- /content -->
 	<!-- footer -->
