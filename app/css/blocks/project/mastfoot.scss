@@ -1,7 +1,22 @@
+//
+// Mastfoot
+// --------------------------------------------------
+
+
+// Base class
+// --------------------------------------------------
+
+
 .mastfoot {
+	height: 45px;
+	border-top: 1px $color-border-main solid;
+	width: 100%;
+}
+
+// 1 screen
+// -------------------------
+
+.mastfoot-1screen {
 	position: absolute;
 	bottom: 5px;
-	width: 100%;
-	border-top: 1px $color-border-main solid;
-	height: 45px;
 }

@@ -3,8 +3,6 @@
 // --------------------------------------------------
 
 .panel{
-	box-shadow: 0 0 30px $gray-c;
-
 
 	// Border-radius Fix
 	&-heading,
@@ -20,7 +18,7 @@
 
 	//# Header
 	&-heading{
-		padding-bottom: 0px;
+	
 	}
 
 		&-title{
@@ -55,5 +53,10 @@
 	// Color Variations
 	// -------------------------------
 
-
 }
+	
+//Shadow
+.panel-shadow {
+	box-shadow: 0 0 30px $gray-c;
+}
+	

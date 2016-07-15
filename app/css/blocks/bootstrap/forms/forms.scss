@@ -2,6 +2,23 @@
 // Forms
 // --------------------------------------------------
 
+// Form without margin-bottom between inputs
+//
+.form-without-spacing {
+	.form-group {
+	
+		+ .form-group {
+			.form-control {
+				border-top: 0px;				
+				margin-top: -$form-group-margin-bottom;
+			}			
+			.form-control:focus {
+				border: 1px solid $input-border-focus;			
+			}
+		}		
+	}
+}
+
 // Form-group
 .form-group{
 
