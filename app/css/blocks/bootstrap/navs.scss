@@ -7,48 +7,58 @@
 // --------------------------------------------------
 
 .nav {
-}
 
-.nav-links {
-	
-	border-bottom: 1px solid $nav-tabs-border-color;
-	
-	 > li {
-	float: left;
 
-    // Actual tabs (as links)
-    > a {
-      &:hover {
-		background: none;
-      }
-    }
+	// Style Variations
+	// -------------------------------
 
-    // Active state, and its :hover to override normal :hover
-    &.active > a {
-      &,
-      &:hover,
-      &:focus {
-		background: none;
-		font-weight: bold;
-        border-bottom: 3px solid $nav-tabs-active-link-hover-border-color;
-      }
-    }
-  }
-}
+	//# Link Style
+	&-links {
 
-.nav-center {
-	text-align: center;
+		border-bottom: 1px solid $nav-tabs-border-color;
 
-	> li {
-		float: none;
-		position: relative;
-		display: inline-block;
+		> li {
+			float: left;
 
-    // Actual tabs (as links)
-    > a {
-      &:hover {
-		background: none;
-      }
-    }
-  }
+			// Actual tabs (as links)
+			> a {
+				&:hover {
+					background: none;
+				}
+			}
+
+			// Active state, and its :hover to override normal :hover
+			&.active > a {
+				&,
+				&:hover,
+				&:focus {
+					background: none;
+					font-weight: bold;
+					border-bottom: 3px solid $nav-tabs-active-link-hover-border-color;
+				}
+			}
+		}
+	}
+
+	// Position Variations
+	// -------------------------------
+
+	//# Center
+	&-center {
+		text-align: center;
+
+		> li {
+			float: none;
+			position: relative;
+			display: inline-block;
+
+			// Actual tabs (as links)
+			> a {
+				&:hover {
+					background: none;
+				}
+			}
+		}
+	}
+
 }

@@ -48,15 +48,23 @@
 	// Extra Blocks
 	// -------------------------------
 
+	//# Panel Navs
+	&-nav{
+
+	}
+
 
 
 	// Color Variations
 	// -------------------------------
 
+
+	// Style Variations
+	// -------------------------------
+
+	//# Shadow
+	&-shadow {
+		box-shadow: 0 0 30px $gray-c;
+	}
+
 }
-	
-//Shadow
-.panel-shadow {
-	box-shadow: 0 0 30px $gray-c;
-}
-	
