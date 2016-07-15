@@ -74,7 +74,7 @@ $color-border-focus:                            #4d90fe;           //#66afe9;
 $body-bg:                                       $color-bg-extra; //#fff !default;
 $text-color:                                    $gray-6;        //#607d8b; //$gray-dark !default;
 
-$link-color:                                    $gray-darker;
+$link-color:                                    $brand-primary;
 $link-hover-color:                              darken($link-color, 15%);
 $link-hover-decoration:                         none;   //underline;
 

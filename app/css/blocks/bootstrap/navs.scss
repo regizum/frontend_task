@@ -22,6 +22,7 @@
 
 			// Actual tabs (as links)
 			> a {
+				color: $gray-darker;				
 				&:hover {
 					background: none;
 				}

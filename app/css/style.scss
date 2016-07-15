@@ -63,7 +63,7 @@
 //# Reset and dependencies
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/print";
-@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";
+//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";                  // Не используем
 
 //# Core CSS
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
@@ -125,5 +125,4 @@
 @import 'blocks/bootstrap/badge';
 @import 'blocks/bootstrap/close';
 @import 'blocks/bootstrap/navs';
-@import 'blocks/project/mastfoot';
 @import 'blocks/project/page';

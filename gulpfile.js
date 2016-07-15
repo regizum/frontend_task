@@ -34,10 +34,10 @@ gulp.task('images', function () {
     gulp.src('app/img/**/*')
         .pipe(gulp.dest('dist/img'));
 });
-//fonts
+// fonts
 gulp.task('fonts', function () {
-    gulp.src('app/fonts/**/*')
-        .pipe(gulp.dest('dist/fonts/bootstrap'));
+    gulp.src('app/font/**.*')
+        .pipe(gulp.dest('dist/font/font-awesome'));
 });
 //sass
 gulp.task('sass', ['images', 'fonts'], function () {

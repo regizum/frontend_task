@@ -21,14 +21,14 @@
 	 		<div class="container">
 				<div class="row">
 					<div class="col-xs-24 col-sm-12 col-sm-offset-6 col-md-10 col-md-offset-7 col-lg-8 col-lg-offset-8">
-						<article class="panel panel-default panel-shadow">
-							<div class="panel-body">
-								<img class="img-responsive center-block m-t-30" src="img/logo.png" />			
-								<!-- Nav tabs -->
-							</div>	
-							<!-- Tab panes -->
-							<div class="tab-content">
-								<div class="tab-pane active" id="sign">	
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div class="tab-pane active" id="sign">	
+								<article class="panel panel-default panel-shadow">	
+									<div class="panel-body">
+										<img class="img-responsive center-block m-t-30" src="img/logo.png" />			
+										<!-- Nav tabs -->
+									</div>
 									<div class="panel-nav">							
 										<ul class="nav nav-links nav-center">
 											<li class="active"><a href="#sign-in" data-toggle="tab">Вход в панель</a></li>
@@ -71,9 +71,16 @@
 												</form>
 											</div>
 										</div>
-									</div>
-								</div>
-								<div class="tab-pane" id="forget-password">		
+									</div>	
+									<!-- /.panel -->							
+								</article>	
+							</div>
+							<div class="tab-pane" id="forget-password">	
+								<article class="panel panel-default panel-shadow">	
+									<div class="panel-heading">
+										<img class="img-responsive center-block m-t-30 m-b-10" src="img/logo.png" />			
+										<!-- Nav tabs -->
+									</div>							
 									<div class="panel-body">							
 										<h3 class="text-align-center m-t-5">Забыли пароль?</h3>
 										<p class="text-align-center">Не переживайте. Просто введите свою эл. почту или логин, и мы вышлем инструкцию по восстановлению.</p>
@@ -84,26 +91,26 @@
 											</div>
 											<button type="submit" class="btn btn-default btn-block btn-primary btn-lg">Войти</button>								
 										</form>
-										<p class="m-t-15 m-b-0 text-align-center"><a href="#sign" data-toggle="tab"><span class="glyphicon glyphicon-circle-arrow-left"></span> Назад к форме входа</a></p>						
+										<p class="m-t-15 m-b-0 text-align-center"><a href="#sign" data-toggle="tab"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Назад к форме входа</a></p>				
 									</div>
-								</div>
+									<!-- /.panel -->
+								</article>
 							</div>	
-							<!-- /.panel -->
-						</article>					
+						</div>					
 					<!-- /.col-xs-20 col-xs-offset-2 col-sm-12 col-sm-offset-7 col-md-10 col-md-offset-7 col-lg-8 col-lg-offset-8 -->
 					</div>
 				</div>
 				<!-- /.container -->
-			</div>
+			</div>			
+			<footer class="page-footer">
+				<p class="text-align-center m-t-10">Footer</p>
+			</footer>
 			<!-- /.page-wrapper -->
 		</div>
 		<!-- /.page page-vertical-middle -->
 	</div>
 	<!-- /content -->
 	<!-- footer -->
-	<footer class="mastfoot mastfoot-1screen text-align-center">
-		<p class="text-align-center m-t-15">Footer</p>
-	</footer>
 	<script src="js/vendor/jquery-1.11.3.min.js"></script>
 	<!-- build:plugins -->
 	<script src="js/plugins/bootstrap.js"></script>
