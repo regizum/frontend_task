@@ -65,8 +65,13 @@
 	
 		a {
 			color: $gray-darker;
+		
+			&:focus,
+			&.focus,
+			&:hover{
+				color: $link-hover-color;
+			}
 		}
-
 	}
 
 
