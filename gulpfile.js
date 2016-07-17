@@ -58,7 +58,11 @@ gulp.task('html-include', function () {
         .pipe(include())
         .pipe(gulp.dest('app/'));
 });
-gulp.task('html', ['html-include'], function () {
+gulp.task('clean-app', ['html-include'], function () {
+    gulp.src('app/ext')
+        .pipe(clean({force: true}))
+});
+gulp.task('html', ['clean-app'], function () {
     gulp.src('app/**.html')
         .pipe(htmlreplace({
             'cssPlugins': 'css/plugins.css',
@@ -67,7 +71,7 @@ gulp.task('html', ['html-include'], function () {
         .pipe(gulp.dest('dist/'))
         .pipe(connect.reload());
 });
-
+//js
 gulp.task('js', function () {
     gulp.src('app/js/**.js')
         .pipe(uglify())
